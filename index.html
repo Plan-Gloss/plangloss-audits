@@ -2,71 +2,141 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Plan Gloss Health Checks</title>
 
+<link href="https://fonts.cdnfonts.com/css/cooper-hewitt" rel="stylesheet">
+
 <style>
+:root{
+  --coral:#ff5757;
+  --deep-teal:#13505b;
+  --aqua:#4ba4b4;
+  --warm-ochre:#cb915a;
+  --soft-cream:#f1ece7;
+  --white:#ffffff;
+}
+
+*{
+  box-sizing:border-box;
+}
 
 body{
-font-family: Georgia, serif;
-background:#f8f6f2;
-margin:0;
-padding:60px 30px;
-color:#2f2f2f;
+  margin:0;
+  padding:72px 28px;
+  font-family:'Cooper Hewitt', Arial, sans-serif;
+  background:var(--soft-cream);
+  color:var(--deep-teal);
 }
 
 .wrapper{
-max-width:1100px;
-margin:auto;
-text-align:center;
+  max-width:1120px;
+  margin:0 auto;
+}
+
+.hero{
+  text-align:center;
+  max-width:900px;
+  margin:0 auto 64px;
+}
+
+.kicker{
+  margin:0 0 18px;
+  color:var(--warm-ochre);
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:2.5px;
+  text-transform:uppercase;
 }
 
 h1{
-font-size:52px;
-font-weight:500;
-line-height:1.2;
-margin-bottom:20px;
+  margin:0 0 22px;
+  font-size:64px;
+  line-height:1.05;
+  font-weight:700;
+  letter-spacing:-1.5px;
 }
 
 .intro{
-max-width:720px;
-margin:0 auto 60px;
-font-size:22px;
-line-height:1.6;
+  max-width:720px;
+  margin:0 auto;
+  font-size:22px;
+  line-height:1.55;
+  color:var(--deep-teal);
 }
 
 .grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:28px;
 }
 
 .card{
-background:white;
-padding:40px;
-border-radius:18px;
-box-shadow:0 6px 24px rgba(0,0,0,.06);
-text-align:left;
+  background:var(--white);
+  border:1px solid rgba(19,80,91,.10);
+  border-radius:22px;
+  padding:38px;
+  min-height:270px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  box-shadow:0 10px 30px rgba(19,80,91,.06);
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  transition:.2s ease;
+  box-shadow:0 14px 36px rgba(19,80,91,.10);
 }
 
 .card h2{
-font-size:30px;
-margin-bottom:15px;
+  margin:0 0 16px;
+  font-size:30px;
+  line-height:1.05;
+  font-weight:700;
+  letter-spacing:-.3px;
 }
 
 .card p{
-line-height:1.6;
-margin-bottom:25px;
+  margin:0 0 30px;
+  font-size:17px;
+  line-height:1.5;
 }
 
 .button{
-display:inline-block;
-padding:14px 24px;
-background:#2f2f2f;
-color:white;
-text-decoration:none;
-border-radius:40px;
+  display:inline-block;
+  align-self:flex-start;
+  background:var(--deep-teal);
+  color:white;
+  padding:14px 26px;
+  border-radius:999px;
+  text-decoration:none;
+  font-size:15px;
+  font-weight:700;
 }
 
+.button:hover{
+  background:var(--aqua);
+  transition:.2s ease;
+}
+
+@media(max-width:700px){
+  body{
+    padding:48px 20px;
+  }
+
+  h1{
+    font-size:44px;
+  }
+
+  .intro{
+    font-size:19px;
+  }
+
+  .card{
+    padding:30px;
+  }
+}
 </style>
 </head>
 
@@ -74,47 +144,59 @@ border-radius:40px;
 
 <div class="wrapper">
 
-<h1>
-Business Health Checks That Help You Find Clarity, Focus Effort and Build Momentum
-</h1>
+  <section class="hero">
+    <p class="kicker">Complimentary Diagnostic Tools</p>
 
-<p class="intro">
-Explore five complimentary diagnostic audits designed to uncover strengths, friction points and practical next steps.
-</p>
+    <h1>Find Clarity.<br>Focus Effort.<br>Build Momentum.</h1>
 
-<div class="grid">
+    <p class="intro">
+      Explore five business health checks designed to uncover strengths, friction points and practical next steps.
+    </p>
+  </section>
 
-<div class="card">
-<h2>Brand Clarity</h2>
-<p>Assess how clearly your business communicates value and builds trust.</p>
-<a class="button" href="#">Start Audit</a>
-</div>
+  <section class="grid">
 
-<div class="card">
-<h2>Website Performance</h2>
-<p>See whether your website is supporting credibility, engagement and action.</p>
-<a class="button" href="#">Start Audit</a>
-</div>
+    <div class="card">
+      <div>
+        <h2>Clarify My Brand</h2>
+        <p>Do customers instantly understand your value?</p>
+      </div>
+      <a class="button" href="#">Start Health Check</a>
+    </div>
 
-<div class="card">
-<h2>Social Presence</h2>
-<p>Evaluate whether your content is reinforcing visibility and confidence.</p>
-<a class="button" href="#">Start Audit</a>
-</div>
+    <div class="card">
+      <div>
+        <h2>Improve My Website</h2>
+        <p>Is your website helping visitors move toward action?</p>
+      </div>
+      <a class="button" href="#">Start Health Check</a>
+    </div>
 
-<div class="card">
-<h2>Sales Messaging</h2>
-<p>Review how effectively your messaging supports conversion.</p>
-<a class="button" href="#">Start Audit</a>
-</div>
+    <div class="card">
+      <div>
+        <h2>Strengthen My Social</h2>
+        <p>Is your content reinforcing trust and visibility?</p>
+      </div>
+      <a class="button" href="#">Start Health Check</a>
+    </div>
 
-<div class="card">
-<h2>Customer Experience</h2>
-<p>Identify opportunities to strengthen reviews, loyalty and touchpoints.</p>
-<a class="button" href="#">Start Audit</a>
-</div>
+    <div class="card">
+      <div>
+        <h2>Sharpen My Sales Messaging</h2>
+        <p>Is your messaging helping opportunities move forward?</p>
+      </div>
+      <a class="button" href="#">Start Health Check</a>
+    </div>
 
-</div>
+    <div class="card">
+      <div>
+        <h2>Improve Customer Experience</h2>
+        <p>Are your reviews and touchpoints building loyalty?</p>
+      </div>
+      <a class="button" href="#">Start Health Check</a>
+    </div>
+
+  </section>
 
 </div>
 
