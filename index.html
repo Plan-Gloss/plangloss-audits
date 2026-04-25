@@ -1,52 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Plan Gloss Audit</title>
-<link rel="stylesheet" href="style.css">
+<title>Plan Gloss Health Checks</title>
+
+<style>
+
+body{
+font-family: Georgia, serif;
+background:#f8f6f2;
+margin:0;
+padding:60px 30px;
+color:#2f2f2f;
+}
+
+.wrapper{
+max-width:1100px;
+margin:auto;
+text-align:center;
+}
+
+h1{
+font-size:52px;
+font-weight:500;
+line-height:1.2;
+margin-bottom:20px;
+}
+
+.intro{
+max-width:720px;
+margin:0 auto 60px;
+font-size:22px;
+line-height:1.6;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:40px;
+border-radius:18px;
+box-shadow:0 6px 24px rgba(0,0,0,.06);
+text-align:left;
+}
+
+.card h2{
+font-size:30px;
+margin-bottom:15px;
+}
+
+.card p{
+line-height:1.6;
+margin-bottom:25px;
+}
+
+.button{
+display:inline-block;
+padding:14px 24px;
+background:#2f2f2f;
+color:white;
+text-decoration:none;
+border-radius:40px;
+}
+
+</style>
 </head>
+
 <body>
 
-<div class="container">
-<h1>Plan Gloss Health Check</h1>
+<div class="wrapper">
 
-<form id="auditForm">
+<h1>
+Business Health Checks That Help You Find Clarity, Focus Effort and Build Momentum
+</h1>
 
+<p class="intro">
+Explore five complimentary diagnostic audits designed to uncover strengths, friction points and practical next steps.
+</p>
+
+<div class="grid">
+
+<div class="card">
 <h2>Brand Clarity</h2>
+<p>Assess how clearly your business communicates value and builds trust.</p>
+<a class="button" href="#">Start Audit</a>
+</div>
 
-<label>
-How clearly is your value proposition communicated?
-</label>
+<div class="card">
+<h2>Website Performance</h2>
+<p>See whether your website is supporting credibility, engagement and action.</p>
+<a class="button" href="#">Start Audit</a>
+</div>
 
-<select class="score">
-<option value="1">Needs Work</option>
-<option value="3">Somewhat Clear</option>
-<option value="5">Very Clear</option>
-</select>
+<div class="card">
+<h2>Social Presence</h2>
+<p>Evaluate whether your content is reinforcing visibility and confidence.</p>
+<a class="button" href="#">Start Audit</a>
+</div>
 
+<div class="card">
+<h2>Sales Messaging</h2>
+<p>Review how effectively your messaging supports conversion.</p>
+<a class="button" href="#">Start Audit</a>
+</div>
 
-<label>
-Do customers immediately understand what you offer?
-</label>
-
-<select class="score">
-<option value="1">No</option>
-<option value="3">Mostly</option>
-<option value="5">Yes</option>
-</select>
-
-
-<button type="button" onclick="calculateScore()">
-See Results
-</button>
-
-</form>
-
-<div id="results"></div>
+<div class="card">
+<h2>Customer Experience</h2>
+<p>Identify opportunities to strengthen reviews, loyalty and touchpoints.</p>
+<a class="button" href="#">Start Audit</a>
+</div>
 
 </div>
 
-<script src="script.js"></script>
+</div>
 
 </body>
 </html>
