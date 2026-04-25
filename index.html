@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Plan Gloss Health Checks</title>
-
 <link href="https://fonts.cdnfonts.com/css/cooper-hewitt" rel="stylesheet">
 
 <style>
@@ -27,112 +26,129 @@ body{
 }
 
 .wrapper{
-  max-width:1180px;
+  max-width:1080px;
   margin:0 auto;
-  padding:64px 28px 72px;
+  padding:70px 26px;
 }
 
 .hero{
-  max-width:880px;
-  margin:0 auto 64px;
-  text-align:center;
+  margin-bottom:58px;
 }
 
 .kicker{
   color:var(--ochre);
-  font-size:14px;
-  font-weight:800;
   text-transform:uppercase;
   letter-spacing:2px;
-  margin-bottom:18px;
+  font-weight:700;
+  font-size:14px;
+  margin-bottom:16px;
 }
 
 h1{
   font-size:64px;
-  line-height:1;
-  letter-spacing:-1.5px;
+  line-height:1.02;
   margin:0 0 24px;
-  font-weight:900;
+  font-weight:800;
+  letter-spacing:-1.4px;
 }
 
 .hero p{
-  font-size:23px;
+  max-width:720px;
+  font-size:24px;
   line-height:1.45;
-  margin:0 auto;
-  max-width:760px;
+  margin:0;
 }
 
-.grid{
-  display:grid;
-  grid-template-columns:repeat(5,1fr);
-  gap:22px;
-}
-
-.card{
-  background:var(--white);
-  border-radius:28px;
-  padding:30px;
-  min-height:310px;
+.services{
   display:flex;
   flex-direction:column;
-  justify-content:space-between;
+  gap:28px;
+}
+
+.service{
+  background:var(--white);
+  border-radius:30px;
+  padding:38px;
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:30px;
+  align-items:center;
+  box-shadow:0 12px 32px rgba(19,80,91,.08);
   border:1px solid rgba(19,80,91,.10);
-  box-shadow:0 14px 34px rgba(19,80,91,.08);
 }
 
-.card h2{
-  font-size:29px;
+.service h2{
+  font-size:34px;
   line-height:1.05;
-  margin:0 0 18px;
-  font-weight:900;
+  margin:0 0 12px;
+  font-weight:800;
 }
 
-.card p{
-  font-size:16px;
+.service p{
+  font-size:19px;
   line-height:1.45;
-  margin:0 0 28px;
+  margin:0;
+  max-width:700px;
 }
 
 .button{
-  display:inline-block;
-  align-self:flex-start;
   background:var(--deep-teal);
   color:white;
-  padding:13px 22px;
+  padding:15px 26px;
   border-radius:999px;
   text-decoration:none;
-  font-size:14px;
   font-weight:800;
+  white-space:nowrap;
 }
 
 .button:hover{
   background:var(--aqua);
 }
 
-.note{
-  margin:54px auto 0;
-  max-width:820px;
-  text-align:center;
-  font-size:22px;
+.cta{
+  margin-top:52px;
+  background:var(--deep-teal);
+  color:white;
+  border-radius:34px;
+  padding:44px;
+}
+
+.cta h2{
+  font-size:38px;
+  margin:0 0 14px;
+  line-height:1.05;
+}
+
+.cta p{
+  font-size:21px;
   line-height:1.45;
-  font-weight:700;
+  margin:0 0 26px;
+  max-width:720px;
 }
 
-@media(max-width:1100px){
-  .grid{grid-template-columns:repeat(2,1fr);}
+.cta .button{
+  background:white;
+  color:var(--deep-teal);
 }
 
-@media(max-width:650px){
-  .wrapper{padding:42px 20px 56px;}
+@media(max-width:750px){
+  .wrapper{padding:48px 20px;}
   h1{font-size:44px;}
-  .hero p{font-size:19px;}
-  .grid{grid-template-columns:1fr;}
+  .hero p{font-size:20px;}
+
+  .service{
+    grid-template-columns:1fr;
+    padding:30px;
+  }
+
+  .button{
+    justify-self:start;
+  }
 }
 </style>
 </head>
 
 <body>
-
 <div class="wrapper">
 
   <section class="hero">
@@ -143,55 +159,56 @@ h1{
     </p>
   </section>
 
-  <section class="grid">
+  <section class="services">
 
-    <div class="card">
+    <div class="service">
       <div>
-        <h2>Clarify My Brand</h2>
-        <p>Review whether your messaging, positioning and brand structure help customers quickly understand your value.</p>
+        <h2>Brand Systems & Foundations</h2>
+        <p>Clearly defined messaging, visual identity, and brand structure so your business shows up consistently and professionally.</p>
       </div>
-      <a class="button" href="#">Start Check</a>
+      <a class="button" href="#">Clarify My Brand</a>
     </div>
 
-    <div class="card">
+    <div class="service">
       <div>
-        <h2>Build A Sales Toolkit</h2>
-        <p>Assess whether your marketing and sales materials clearly communicate your offers and move customers to action.</p>
+        <h2>Sales & Marketing Collateral</h2>
+        <p>Polished, strategic marketing and brand materials that clearly communicate your offers and move customers to action.</p>
       </div>
-      <a class="button" href="#">Start Check</a>
+      <a class="button" href="#">Build A Sales Toolkit</a>
     </div>
 
-    <div class="card">
+    <div class="service">
       <div>
-        <h2>Design My Website</h2>
-        <p>See whether your website supports your brand, your goals and your customer’s overall experience.</p>
+        <h2>Web Design & Digital Presence</h2>
+        <p>Strategically designed websites that prioritize your brand, your goals, and your customer's overall experience.</p>
       </div>
-      <a class="button" href="#">Start Check</a>
+      <a class="button" href="#">Design My Website</a>
     </div>
 
-    <div class="card">
+    <div class="service">
       <div>
-        <h2>Get More Reviews</h2>
-        <p>Identify opportunities to improve customer touchpoints and strengthen trust, loyalty and reputation.</p>
+        <h2>Experience & Brand Reputation</h2>
+        <p>Refine how customers experience your business across all touchpoints, and turn customers into loyal brand advocates.</p>
       </div>
-      <a class="button" href="#">Start Check</a>
+      <a class="button" href="#">Get More Reviews</a>
     </div>
 
-    <div class="card">
+    <div class="service">
       <div>
-        <h2>Make Social Easier</h2>
-        <p>Evaluate whether your content system makes showing up online simple, sustainable and consistent.</p>
+        <h2>Social Content & Toolkits</h2>
+        <p>Cohesive, repeatable content systems that make showing up online simple and sustainable... maybe even enjoyable.</p>
       </div>
-      <a class="button" href="#">Start Check</a>
+      <a class="button" href="#">Make Social Easier</a>
     </div>
 
   </section>
 
-  <div class="note">
-    Not sure where to start? Choose the area that feels most urgent, then use your results to identify the priority actions that may have the biggest impact.
-  </div>
+  <section class="cta">
+    <h2>Not sure where to start?</h2>
+    <p>Choose the area that feels most urgent, then use your results to identify the priority actions that may have the biggest impact.</p>
+    <a class="button" href="#">Book A Discovery Call</a>
+  </section>
 
 </div>
-
 </body>
 </html>
