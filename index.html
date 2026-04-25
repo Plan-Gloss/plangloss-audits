@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Plan Gloss Audit</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h1>Plan Gloss Health Check</h1>
+
+<form id="auditForm">
+
+<h2>Brand Clarity</h2>
+
+<label>
+How clearly is your value proposition communicated?
+</label>
+
+<select class="score">
+<option value="1">Needs Work</option>
+<option value="3">Somewhat Clear</option>
+<option value="5">Very Clear</option>
+</select>
+
+
+<label>
+Do customers immediately understand what you offer?
+</label>
+
+<select class="score">
+<option value="1">No</option>
+<option value="3">Mostly</option>
+<option value="5">Yes</option>
+</select>
+
+
+<button type="button" onclick="calculateScore()">
+See Results
+</button>
+
+</form>
+
+<div id="results"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
