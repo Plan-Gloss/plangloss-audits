@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Plan Gloss Health Checks</title>
-<link href="https://fonts.cdnfonts.com/css/cooper-hewitt" rel="stylesheet">
+
+<link href="https://fonts.cdnfonts.com/css/cooper-hewitt?styles=300,400,500,600" rel="stylesheet">
 
 <style>
 :root{
@@ -16,11 +17,15 @@
   --white:#ffffff;
 }
 
-*{box-sizing:border-box;}
+*{
+  box-sizing:border-box;
+}
 
 body{
   margin:0;
   font-family:'Cooper Hewitt', Arial, sans-serif;
+  font-weight:400;
+  font-style:normal;
   background:var(--cream);
   color:var(--deep-teal);
 }
@@ -38,24 +43,25 @@ body{
 .kicker{
   color:var(--ochre);
   text-transform:uppercase;
-  letter-spacing:2px;
-  font-weight:700;
-  font-size:14px;
+  letter-spacing:1.5px;
+  font-weight:500;
+  font-size:13px;
   margin-bottom:16px;
 }
 
 h1{
-  font-size:64px;
-  line-height:1.02;
-  margin:0 0 24px;
-  font-weight:800;
-  letter-spacing:-1.4px;
+  font-size:56px;
+  line-height:1.08;
+  margin:0 0 22px;
+  font-weight:600;
+  letter-spacing:-1px;
 }
 
 .hero p{
   max-width:720px;
-  font-size:24px;
+  font-size:22px;
   line-height:1.45;
+  font-weight:400;
   margin:0;
 }
 
@@ -78,15 +84,17 @@ h1{
 }
 
 .service h2{
-  font-size:34px;
-  line-height:1.05;
-  margin:0 0 12px;
-  font-weight:800;
+  font-size:30px;
+  line-height:1.08;
+  margin:0 0 10px;
+  font-weight:600;
+  font-style:normal;
 }
 
 .service p{
-  font-size:19px;
-  line-height:1.45;
+  font-size:18px;
+  line-height:1.5;
+  font-weight:400;
   margin:0;
   max-width:700px;
 }
@@ -97,7 +105,8 @@ h1{
   padding:15px 26px;
   border-radius:999px;
   text-decoration:none;
-  font-weight:800;
+  font-weight:500;
+  font-size:14px;
   white-space:nowrap;
 }
 
@@ -114,14 +123,16 @@ h1{
 }
 
 .cta h2{
-  font-size:38px;
+  font-size:34px;
   margin:0 0 14px;
-  line-height:1.05;
+  line-height:1.08;
+  font-weight:600;
 }
 
 .cta p{
-  font-size:21px;
+  font-size:20px;
   line-height:1.45;
+  font-weight:400;
   margin:0 0 26px;
   max-width:720px;
 }
@@ -132,9 +143,17 @@ h1{
 }
 
 @media(max-width:750px){
-  .wrapper{padding:48px 20px;}
-  h1{font-size:44px;}
-  .hero p{font-size:20px;}
+  .wrapper{
+    padding:48px 20px;
+  }
+
+  h1{
+    font-size:42px;
+  }
+
+  .hero p{
+    font-size:19px;
+  }
 
   .service{
     grid-template-columns:1fr;
@@ -153,7 +172,9 @@ h1{
 
   <section class="hero">
     <div class="kicker">Complimentary Diagnostic Tools</div>
+
     <h1>Strategic Marketing Health Checks<br>Built Around Your Business</h1>
+
     <p>
       From brand foundations and strategic websites to visibility systems and customer experience, these quick checks help you see where your business is strong, where there may be friction, and what to focus on next.
     </p>
@@ -166,7 +187,7 @@ h1{
         <h2>Brand Systems & Foundations</h2>
         <p>Clearly defined messaging, visual identity, and brand structure so your business shows up consistently and professionally.</p>
       </div>
-      <a class="button" href="#">Clarify My Brand</a>
+      <a class="button" href="#">Start Audit</a>
     </div>
 
     <div class="service">
@@ -174,7 +195,7 @@ h1{
         <h2>Sales & Marketing Collateral</h2>
         <p>Polished, strategic marketing and brand materials that clearly communicate your offers and move customers to action.</p>
       </div>
-      <a class="button" href="#">Build A Sales Toolkit</a>
+      <a class="button" href="#">Start Audit</a>
     </div>
 
     <div class="service">
@@ -182,7 +203,7 @@ h1{
         <h2>Web Design & Digital Presence</h2>
         <p>Strategically designed websites that prioritize your brand, your goals, and your customer's overall experience.</p>
       </div>
-      <a class="button" href="#">Design My Website</a>
+      <a class="button" href="#">Start Audit</a>
     </div>
 
     <div class="service">
@@ -190,7 +211,7 @@ h1{
         <h2>Experience & Brand Reputation</h2>
         <p>Refine how customers experience your business across all touchpoints, and turn customers into loyal brand advocates.</p>
       </div>
-      <a class="button" href="#">Get More Reviews</a>
+      <a class="button" href="#">Start Audit</a>
     </div>
 
     <div class="service">
@@ -198,7 +219,7 @@ h1{
         <h2>Social Content & Toolkits</h2>
         <p>Cohesive, repeatable content systems that make showing up online simple and sustainable... maybe even enjoyable.</p>
       </div>
-      <a class="button" href="#">Make Social Easier</a>
+      <a class="button" href="#">Start Audit</a>
     </div>
 
   </section>
