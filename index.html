@@ -12,95 +12,85 @@
   --coral:#ff5757;
   --deep-teal:#13505b;
   --aqua:#4ba4b4;
-  --warm-ochre:#cb915a;
-  --soft-cream:#f1ece7;
+  --ochre:#cb915a;
+  --cream:#f1ece7;
   --white:#ffffff;
 }
 
-*{
-  box-sizing:border-box;
-}
+*{box-sizing:border-box;}
 
 body{
   margin:0;
-  padding:72px 28px;
   font-family:'Cooper Hewitt', Arial, sans-serif;
-  background:var(--soft-cream);
+  background:var(--cream);
   color:var(--deep-teal);
 }
 
 .wrapper{
-  max-width:1120px;
+  max-width:1180px;
   margin:0 auto;
+  padding:64px 28px 72px;
 }
 
 .hero{
-  text-align:center;
-  max-width:900px;
+  max-width:880px;
   margin:0 auto 64px;
+  text-align:center;
 }
 
 .kicker{
-  margin:0 0 18px;
-  color:var(--warm-ochre);
-  font-size:13px;
-  font-weight:700;
-  letter-spacing:2.5px;
+  color:var(--ochre);
+  font-size:14px;
+  font-weight:800;
   text-transform:uppercase;
+  letter-spacing:2px;
+  margin-bottom:18px;
 }
 
 h1{
-  margin:0 0 22px;
   font-size:64px;
-  line-height:1.05;
-  font-weight:700;
+  line-height:1;
   letter-spacing:-1.5px;
+  margin:0 0 24px;
+  font-weight:900;
 }
 
-.intro{
-  max-width:720px;
+.hero p{
+  font-size:23px;
+  line-height:1.45;
   margin:0 auto;
-  font-size:22px;
-  line-height:1.55;
-  color:var(--deep-teal);
+  max-width:760px;
 }
 
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:28px;
+  grid-template-columns:repeat(5,1fr);
+  gap:22px;
 }
 
 .card{
   background:var(--white);
-  border:1px solid rgba(19,80,91,.10);
-  border-radius:22px;
-  padding:38px;
-  min-height:270px;
+  border-radius:28px;
+  padding:30px;
+  min-height:310px;
   display:flex;
   flex-direction:column;
   justify-content:space-between;
-  box-shadow:0 10px 30px rgba(19,80,91,.06);
-}
-
-.card:hover{
-  transform:translateY(-4px);
-  transition:.2s ease;
-  box-shadow:0 14px 36px rgba(19,80,91,.10);
+  border:1px solid rgba(19,80,91,.10);
+  box-shadow:0 14px 34px rgba(19,80,91,.08);
 }
 
 .card h2{
-  margin:0 0 16px;
-  font-size:30px;
+  font-size:29px;
   line-height:1.05;
-  font-weight:700;
-  letter-spacing:-.3px;
+  margin:0 0 18px;
+  font-weight:900;
 }
 
 .card p{
-  margin:0 0 30px;
-  font-size:17px;
-  line-height:1.5;
+  font-size:16px;
+  line-height:1.45;
+  margin:0 0 28px;
 }
 
 .button{
@@ -108,34 +98,35 @@ h1{
   align-self:flex-start;
   background:var(--deep-teal);
   color:white;
-  padding:14px 26px;
+  padding:13px 22px;
   border-radius:999px;
   text-decoration:none;
-  font-size:15px;
-  font-weight:700;
+  font-size:14px;
+  font-weight:800;
 }
 
 .button:hover{
   background:var(--aqua);
-  transition:.2s ease;
 }
 
-@media(max-width:700px){
-  body{
-    padding:48px 20px;
-  }
+.note{
+  margin:54px auto 0;
+  max-width:820px;
+  text-align:center;
+  font-size:22px;
+  line-height:1.45;
+  font-weight:700;
+}
 
-  h1{
-    font-size:44px;
-  }
+@media(max-width:1100px){
+  .grid{grid-template-columns:repeat(2,1fr);}
+}
 
-  .intro{
-    font-size:19px;
-  }
-
-  .card{
-    padding:30px;
-  }
+@media(max-width:650px){
+  .wrapper{padding:42px 20px 56px;}
+  h1{font-size:44px;}
+  .hero p{font-size:19px;}
+  .grid{grid-template-columns:1fr;}
 }
 </style>
 </head>
@@ -145,12 +136,10 @@ h1{
 <div class="wrapper">
 
   <section class="hero">
-    <p class="kicker">Complimentary Diagnostic Tools</p>
-
-    <h1>Find Clarity.<br>Focus Effort.<br>Build Momentum.</h1>
-
-    <p class="intro">
-      Explore five business health checks designed to uncover strengths, friction points and practical next steps.
+    <div class="kicker">Complimentary Diagnostic Tools</div>
+    <h1>Strategic Marketing Health Checks<br>Built Around Your Business</h1>
+    <p>
+      From brand foundations and strategic websites to visibility systems and customer experience, these quick checks help you see where your business is strong, where there may be friction, and what to focus on next.
     </p>
   </section>
 
@@ -159,44 +148,48 @@ h1{
     <div class="card">
       <div>
         <h2>Clarify My Brand</h2>
-        <p>Do customers instantly understand your value?</p>
+        <p>Review whether your messaging, positioning and brand structure help customers quickly understand your value.</p>
       </div>
-      <a class="button" href="#">Start Health Check</a>
+      <a class="button" href="#">Start Check</a>
     </div>
 
     <div class="card">
       <div>
-        <h2>Improve My Website</h2>
-        <p>Is your website helping visitors move toward action?</p>
+        <h2>Build A Sales Toolkit</h2>
+        <p>Assess whether your marketing and sales materials clearly communicate your offers and move customers to action.</p>
       </div>
-      <a class="button" href="#">Start Health Check</a>
+      <a class="button" href="#">Start Check</a>
     </div>
 
     <div class="card">
       <div>
-        <h2>Strengthen My Social</h2>
-        <p>Is your content reinforcing trust and visibility?</p>
+        <h2>Design My Website</h2>
+        <p>See whether your website supports your brand, your goals and your customer’s overall experience.</p>
       </div>
-      <a class="button" href="#">Start Health Check</a>
+      <a class="button" href="#">Start Check</a>
     </div>
 
     <div class="card">
       <div>
-        <h2>Sharpen My Sales Messaging</h2>
-        <p>Is your messaging helping opportunities move forward?</p>
+        <h2>Get More Reviews</h2>
+        <p>Identify opportunities to improve customer touchpoints and strengthen trust, loyalty and reputation.</p>
       </div>
-      <a class="button" href="#">Start Health Check</a>
+      <a class="button" href="#">Start Check</a>
     </div>
 
     <div class="card">
       <div>
-        <h2>Improve Customer Experience</h2>
-        <p>Are your reviews and touchpoints building loyalty?</p>
+        <h2>Make Social Easier</h2>
+        <p>Evaluate whether your content system makes showing up online simple, sustainable and consistent.</p>
       </div>
-      <a class="button" href="#">Start Health Check</a>
+      <a class="button" href="#">Start Check</a>
     </div>
 
   </section>
+
+  <div class="note">
+    Not sure where to start? Choose the area that feels most urgent, then use your results to identify the priority actions that may have the biggest impact.
+  </div>
 
 </div>
 
